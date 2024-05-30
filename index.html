@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Project Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Computer Science Project </h1>
+    </header>
+    <main>
+        <section id="projects-section">
+            <h2>Java Projects</h2>
+            <div class="project">
+                <h3>Project 1: To find radius of circle using inheritance <br><br>
+   
+   class = Point<br><br>
+
+   Data members:<br><br>
+
+   x1 , x2     //To store x coordinates<br>
+   y1 , y2     //To store y coordinates<br><br>
+
+   Member functions:<br><br>
+
+   Point(int a , int b , int c , int d)  //To assign value of a , b , c , d to x1 , x2 , y1 , y2<br>
+   void display()       //To display coordinates<br><br>
+
+
+   class = circle<br><br>
+
+   Data members:<br><br>
+
+   r     // To store radius<br><br>
+
+   Member functions:<br><br>
+
+   circle(int a , int b , int c , int d)  //To call super constructor and assign value to data<br>
+   void calDistance()     //To calculate distance between coordinates and store in r<br>
+   void display()         //To display radius with point<br><br>
+
+   Specify class Point, giving detail of constructor and void display() using concept of inheritance.<br>
+   Specify class Circle giving void calDistnce() and void display() details.<br>
+   Do not write main method.<br><br>
+   
+</h3>
+                <pre><code>
+   import java.util.Scanner;
+   public class Point
+   {
+       int x1 , x2 , y1 , y2 ;
+       Point(int a , int b , int c , int d)
+       {
+           x1 = a;
+           x2 = b;
+           y1 = c;
+           y2 = d;
+       }
+       void display()
+       {
+           System.out.println(" x coordinates are: "+x1+" "+x2);
+           System.out.println(" y coordinates are: "+y1+" "+y2);
+       }
+   }
+
+
+      class Circle extends Point
+   {
+       double r ;
+       Circle(int a , int b , int c , int d)
+       {
+           super(a , b , c , d);
+       }
+       void caldistance()
+       {
+           r = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+       }
+       void display()
+       {
+           System.out.println("coordinates -");
+           super.display();
+           System.out.println("radius - "+r);
+       }
+   }
+                </code></pre>
+            </div><br><br><br>
+            <div class="project">
+                <h3>Project 2: Calculator</h3>
+                <pre><code>
+public class Calculator {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 3;
+        System.out.println("Sum: " + (a + b));
+        System.out.println("Difference: " + (a - b));
+        System.out.println("Product: " + (a * b));
+        System.out.println("Quotient: " + (a / b));
+    }
+}
+                </code></pre>
+            </div><br><br><br>
+            <div class="project">
+    <h3>Project 3: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+<div class="project">
+    <h3>Project 4: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+<div class="project">
+    <h3>Project 5: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+<div class="project">
+    <h3>Project 6: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+<div class="project">
+    <h3>Project 7: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+<div class="project">
+    <h3>Project 8: AnotherJavaProgram</h3>
+    <pre><code>
+public class AnotherJavaProgram {
+    public static void main(String[] args) {
+        // Your Java code here
+    }
+}
+    </code></pre>
+</div><br><br><br>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jagroop Singh</p>
+    </footer>
+</body>
+</html>
